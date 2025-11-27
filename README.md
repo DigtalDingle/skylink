@@ -1,37 +1,24 @@
-# SkyLink – Secure Phone-to-Desktop Control System
+# Skylink
+A secure phone-to-desktop remote control system built with FastAPI and Tailscale.
 
-SkyLink is a lightweight remote dashboard that lets you control or monitor a desktop computer directly from your phone over **Tailscale**.  
-It uses **FastAPI** for both the device agent and the controller dashboard.
+## Features
+- Remote command execution
+- Simple API routing
+- Secure Tailscale networking
+- Foundation for automation and device control
 
-This project is the groundwork for future automation concepts — including remote cat-feeding, device actions, and more.
+## Tech Stack
+- Python
+- FastAPI
+- Tailscale
+- PowerShell hooks (optional)
 
----
+## Why I Built It
+To learn real backend development, networking, and API communication, feed cats remotely
 
-## 🚀 Features (v1)
+## Future Plans
+- Button UI
+- More commands
+- Remote file access
+- Logging
 
-- Secure, private communication using Tailscale
-- Desktop “agent” server that exposes a simple `/status` API
-- Controller dashboard with a clean HTML/CSS UI
-- Phone-accessible dashboard (mobile friendly)
-- Modular structure for future builds and expansions
-
----
-
-## 📁 Project Structure
-
-SkyLink/
-│
-├── controller/ # Phone-facing UI/dashboard
-│ ├── skylink_app.py
-│ ├── templates/
-│ │ └── index.html
-│ ├── static/
-│ │ └── style.css
-│ ├── devices.json
-│ └── requirements.txt
-│
-├── desktop/ # Device agent
-│ ├── server.py
-│ └── requirements.txt
-│
-└── README.md
